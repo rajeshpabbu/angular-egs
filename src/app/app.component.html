@@ -1,1 +1,34 @@
-<router-outlet></router-outlet>
+<div class="d-flex" id="wrapper">
+  <!-- Sidebar -->
+  <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">Start Bootstrap</div>
+    <div class="list-group list-group-flush">
+      <a
+        routerLink="/home"
+        routerLinkActive="active"
+        class="list-group-item list-group-item-action bg-light"
+        >Home</a
+      ><a
+        routerLink="/signup-form"
+        routerLinkActive="active"
+        class="list-group-item list-group-item-action bg-light"
+        >Signup Form</a
+      ><a
+        routerLink="/favorite"
+        routerLinkActive="active"
+        class="list-group-item list-group-item-action bg-light"
+        >Favorite</a
+      >
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
