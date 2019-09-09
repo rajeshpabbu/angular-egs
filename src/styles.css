@@ -35,6 +35,9 @@ body {
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
 }
+.list-group-item.active {
+  color: #007bff;
+}
 
 @media (min-width: 768px) {
   #sidebar-wrapper {

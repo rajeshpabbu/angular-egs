@@ -9,6 +9,9 @@ import { AppRoutingModule } from "./app-routing.module";
 import { FavoriteComponent } from "./favorite/favorite.component";
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TitleCasePipe } from './title-case.pipe';
+import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
@@ -18,7 +21,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     SignupFormComponent,
     FavoriteComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    TitleCasePipe,
+    NewCourseFormComponent,
+    ChangePasswordComponent
   ],
   bootstrap: [AppComponent]
 })

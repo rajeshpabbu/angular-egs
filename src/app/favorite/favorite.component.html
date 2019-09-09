@@ -1,3 +1,16 @@
-<h1 class="mt-4">Favorites Component</h1>
+<div class="jumbotron">
+  <h4>Favorites Component</h4>
+  <p class="lead">
+    <i
+      class="far fa-star"
+      [class.fas]="isFavorite"
+      [class.far]="!isFavorite"
+      (click)="onClick()"
+    ></i>
+  </p>
+  <hr class="my-4" />
+  <h4>Title Case Cutom Pipe</h4>
 
-<i class="far fa-star"></i>
+  <input type="text" [(ngModel)]="title" />
+  <p class="lead">{{ title | titleCase }}</p>
+</div>
