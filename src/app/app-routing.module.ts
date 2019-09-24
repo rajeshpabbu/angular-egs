@@ -7,9 +7,11 @@ import { HomeComponent } from "./home/home.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { NewCourseFormComponent } from "./new-course-form/new-course-form.component";
 import { ChangePasswordComponent } from "./change-password/change-password.component";
+import { DclComponent } from "./dcl/dcl.component";
 
 const routes: Routes = [
   { path: "signup-form", component: SignupFormComponent },
+  { path: "dynamic-component-loader", component: DclComponent },
   { path: "favorite", component: FavoriteComponent },
   { path: "new-course", component: NewCourseFormComponent },
   { path: "change-password", component: ChangePasswordComponent },
