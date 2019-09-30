@@ -10,6 +10,8 @@ import { ChangePasswordComponent } from "./change-password/change-password.compo
 import { DclComponent } from "./dcl/dcl.component";
 
 const routes: Routes = [
+  { path: "lazy", loadChildren: "./lazy.module#LazyModule" },
+
   { path: "signup-form", component: SignupFormComponent },
   { path: "dynamic-component-loader", component: DclComponent },
   { path: "favorite", component: FavoriteComponent },
